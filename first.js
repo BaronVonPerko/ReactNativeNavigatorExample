@@ -4,6 +4,7 @@ import {
   Button,
   StyleSheet,
   Text,
+  ToolbarAndroid,
   View
 } from 'react-native';
 
@@ -21,6 +22,10 @@ export default class First extends Component {
     render() {
         return(
             <View style={styles.container}>
+                <ToolbarAndroid 
+                    style={styles.toolbar}
+                    title="Navigation Example" 
+                    />
                 <Text style={styles.text}>
                     Hello from first component!
                 </Text>
@@ -35,10 +40,15 @@ export default class First extends Component {
 
 const styles = StyleSheet.create({
     container: {
-        flex: 1,
-        justifyContent: 'space-around'
+        flex: 1
     },
     text: {
-        fontSize: 26
+        fontSize: 26,
+        paddingBottom: 20
+    },
+    toolbar: {
+        height: 60,
+        backgroundColor: '#003618',
+        marginBottom: 30
     }
 });
