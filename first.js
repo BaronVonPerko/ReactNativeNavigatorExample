@@ -48,7 +48,7 @@ const styles = StyleSheet.create({
     },
     toolbar: {
         height: 60,
-        backgroundColor: '#003618',
+        backgroundColor: 'lightblue',
         marginBottom: 30
     }
 });
